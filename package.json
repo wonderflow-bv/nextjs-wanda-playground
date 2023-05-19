@@ -25,6 +25,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
     "@wonderflow/config": "^12.0.0"
   }
 }
