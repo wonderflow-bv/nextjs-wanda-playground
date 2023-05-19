@@ -3,14 +3,16 @@
 import "@wonderflow/react-components/core.css";
 import "@wonderflow/themes";
 import { ResponsiveProvider, Container, Text, Stack } from '@wonderflow/react-components'
+import pkg from '../../package.json'
 
 export default function Home() {
+
   return (
     <ResponsiveProvider>
       <Container dimension="large" padding>
         <Stack rowGap={32} vPadding={16}>
           <Stack>
-            <Text variant="subtitle-2">A playgorund based on NextJs@13 and Wanda@12</Text>
+            <Text variant="subtitle-2">{`A playground based on NextJs ${pkg.dependencies.next} and Wanda ${pkg.dependencies['@wonderflow/react-components']}`}</Text>
             <Text>
               <Text as="span" variant="display-4">NextJs + </Text>
               <Text as="span" variant="display-4" color="danger">Wanda</Text>
